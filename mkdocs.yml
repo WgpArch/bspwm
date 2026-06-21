@@ -1,0 +1,20 @@
+site_name: bspwm Dotfiles
+site_description: A highly customized tiling window manager configuration with dual conky.
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue grey
+    accent: light blue
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Keybinds: keybinds.md
+  - Theming: theming.md
+  - Conky Setup: conky.md
+  - Gallery: gallery.md
