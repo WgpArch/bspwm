@@ -17,13 +17,17 @@ XF86AudioMute
 XF86MonBrightness{Up,Down}
     brightnessctl set 5%{+,-}
 
-# Screenshots
+# Full screenshot with 3-second delay (for capturing launcher/power menu)
 super + Print
-     maim "/home/$USER/Pictures/Screenshots/$(date).jpg"
+    mkdir -p /home/wgparch/Pictures/Screenshots/bspwm && sleep 3 && maim /home/wgparch/Pictures/Screenshots/bspwm/$(date +%Y-%m-%d_%H-%M-%S).png
 
-#cropped save
+# Select area screenshot (instant)
 super + shift + Print
-      maim --select "/home/$USER/Pictures/Screenshots/$(date).jpg"
+    mkdir -p /home/wgparch/Pictures/Screenshots/bspwm && maim --select /home/wgparch/Pictures/Screenshots/bspwm/$(date +%Y-%m-%d_%H-%M-%S).png
+
+# Full screenshot (instant, no delay)
+super + control + Print
+    mkdir -p /home/wgparch/Pictures/Screenshots/bspwm && maim /home/wgparch/Pictures/Screenshots/bspwm/$(date +%Y-%m-%d_%H-%M-%S).png
 
 # terminal emulator
 super + Return

@@ -23,4 +23,4 @@ For full installation instructions, keybinds, conky configuration, and theming d
 
 ## 📸 Screenshots
 
-![bspwm Screenshot](screenshot.png)
+![bspwm Screenshot](docs/screenshot/bspwm-screenshot-1.png)
